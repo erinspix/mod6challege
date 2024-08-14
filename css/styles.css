@@ -1,0 +1,52 @@
+header {
+    background-color: black;
+    color: aqua;
+    text-align: center;
+    font-size: 200%;
+}
+
+.content {
+    display: flex;
+    flex-direction: row;
+}
+
+.user {
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+    align-items: center;
+    border-bottom: 5px solid gray;
+}
+
+.user p{
+    font-size: 150%;
+}
+
+#cityName {
+    margin-bottom: 10%;
+    padding: 12px 20px;
+    box-sizing: border-box;
+}
+
+#btn {
+    padding: 14px 28px;
+    font-size: 16px;
+    text-align: center;
+}
+
+.info {
+    width: 65%;
+    border: 5px solid gray;
+}
+
+.area {
+    display: flex;
+    flex-direction: row;
+    font-size: 150%;
+}
+
+#pastCities {
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+}
