@@ -3,29 +3,38 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Weather App</title>
+    <title>Weather Dashboard</title>
     <link rel="stylesheet" href="./css/styles.css"> <!-- Link to the CSS file -->
 </head>
 <body>
     <div class="container">
-        <h1>Weather App</h1>
+        <h1>Weather Dashboard</h1>
         <div id="error-message"></div>
-        <input type="text" id="cityName" placeholder="Enter city name...">
-        <button id="btn">Search</button>
-        <button id="toggle-temp-unit">Toggle °C/°F</button>
 
-        <div id="weather-info">
-            <h3 id="l"></h3>
-            <img id="weather-icon" src="" alt="Weather icon">
-            <p id="temp"></p>
-            <p id="wind"></p>
-            <p id="h"></p>
-        </div>
+        <div class="content" style="display: flex;">
+            <div class="user">
+                <p>Search for a City:</p>
+                <input type="text" id="cityName" placeholder="Enter city name...">
+                <button id="btn">Search</button>
 
-        <div id="forecast-data"></div>
+                <div id="search-history">
+                    <!-- Search History will be dynamically populated here -->
+                </div>
+            </div>
 
-        <div id="search-history">
-            <h3>Search History</h3>
+            <div class="info">
+                <div id="weather-info">
+                    <h3 id="l"></h3>
+                    <img id="weather-icon" src="" alt="Weather icon">
+                    <p id="temp"></p>
+                    <p id="wind"></p>
+                    <p id="h"></p>
+                </div>
+
+                <div id="forecast-data">
+                    <!-- 5-Day Forecast will be dynamically populated here -->
+                </div>
+            </div>
         </div>
     </div>
 
