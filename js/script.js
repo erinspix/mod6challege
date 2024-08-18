@@ -67,8 +67,8 @@ function displayCurrentWeather(data) {
         const iconCode = data.list[0].weather[0].icon;
         const iconUrl = `https://openweathermap.org/img/wn/${iconCode}.png`;
 
-        weatherIcon.src = iconUrl;
-        weatherIcon.alt = description;
+     //   weatherIcon.src = iconUrl;
+      //  weatherIcon.alt = description;
 
         weatherInfoDiv.innerHTML = `
             <h3>${cityName} (${date})</h3>
@@ -232,7 +232,7 @@ document.getElementById('btn').addEventListener('click', event => {
 });
 
 // Event listener to toggle temperature units
-document.getElementById('toggle-temp-unit').addEventListener('click', toggleTemperatureUnit);
+//document.getElementById('toggle-temp-unit').addEventListener('click', toggleTemperatureUnit);
 
 // Display the search history when the page loads
 document.addEventListener('DOMContentLoaded', displaySearchHistory);
